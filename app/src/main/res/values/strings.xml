@@ -1,0 +1,32 @@
+<resources>
+    <string name="add_photo_fab_desc">Add images</string>
+    <string name="app_name">Timeless</string>
+    <string name="app_subtitle">Your Moments Preserved</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="carousel_image">Image in the carousel</string>
+    <string name="content_heading">Content</string>
+    <string name="date_heading">Date</string>
+    <string name="date_picker_title">Select journal date</string>
+    <string name="delete_button">Delete</string>
+    <string name="edit_button">Edit</string>
+    <string name="delete_entry_message">This action will permanently delete the journal entry.</string>
+    <string name="delete_entry_question">Delete entry?</string>
+    <string name="delete_info_message">Journal entry deleted</string>
+    <string name="edit_entry_title">Edit Entry</string>
+    <string name="entry_loading_error">Error loading entry</string>
+    <string name="max_selections_error">You have reached the maximum number of images.</string>
+    <string name="new_entry_fab_desc">New entry</string>
+    <string name="new_entry_title">Create New Entry</string>
+    <string name="one_selection_remaining_error">"Picker requires 2 selections remaining to open. Remove an image to add more."</string>
+    <string name="remove_button">Remove</string>
+    <string name="remove_image_message">This will remove the image from the journal entry.</string>
+    <string name="remove_image_question">Remove image?</string>
+    <string name="save_button">Save</string>
+    <string name="save_info_message">Journal entry saved!</string>
+    <string name="title_heading">Title</string>
+    <string name="title_heading_message">Title (character limit: 75)</string>
+    <string name="update_button">Update</string>
+    <string name="update_info_message">Journal entry updated!</string>
+    <string name="view_entry_title">View Entry</string>
+    <string name="wait_message">Please wait while the images are loading.</string>
+</resources>

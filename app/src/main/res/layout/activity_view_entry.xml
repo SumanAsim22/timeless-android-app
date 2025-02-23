@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ViewEntryActivity">
+
+        <!-- Top app bar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/viewEntryTopAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:menu="@menu/top_app_bar_menu"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="@string/view_entry_title" />
+
+        <!-- Main content container -->
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/viewEntryTopAppBar"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:context=".ViewEntryActivity">
+
+            <!-- Date display -->
+            <TextView
+                android:id="@+id/dateArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/date_heading"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <!-- Title display -->
+            <TextView
+                android:id="@+id/titleArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/title_heading"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <!-- Scrollable content display -->
+            <ScrollView
+                android:id="@+id/SCROLLER_ID"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fillViewport="true"
+                android:layout_margin="8dp"
+                android:scrollbars="vertical">
+
+                <TextView
+                    android:id="@+id/contentArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorSecondary"
+                    android:padding="10dp"
+                    android:text="@string/content_heading"
+                    android:textSize="16sp" />
+            </ScrollView>
+
+            <!-- Carousel RecyclerView for displaying images -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/carouselRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="4dp"
+                android:clipChildren="false"
+                android:clipToPadding="false" />
+
+        </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+[versions]
+activity = "1.10.0"
+androidGradle = "8.7.3"
+appcompat = "1.7.0"
+constraintlayoutVersion = "2.2.0"
+coreTesting = "2.2.0"
+espressoCore = "3.6.1"
+gson = "2.12.1"
+junitVersion = "1.2.1"
+lifecycleVersion = "2.9.0-alpha10"
+materialVersion = "1.13.0-alpha10"
+mockitoCoreVersion = "5.15.2"
+mockitoInlineVersion = "5.2.0"
+roomRuntime = "2.6.1"
+junitJunit = "4.13.2"
+
+[libraries]
+activity = { module = "androidx.activity:activity", version.ref = "activity" }
+constraintlayout-v212 = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayoutVersion" }
+core-testing = { module = "androidx.arch.core:core-testing", version.ref = "coreTesting" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "androidGradle" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata", version.ref = "lifecycleVersion" }
+lifecycle-viewmodel-android = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-android", version.ref = "lifecycleVersion" }
+material-v1130alpha09 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockitoInlineVersion" }
+mockito-mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCoreVersion" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+junit-junit = { group = "junit", name = "junit", version.ref = "junitJunit" }
